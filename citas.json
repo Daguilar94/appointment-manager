@@ -1,0 +1,34 @@
+{
+    "citas": [
+        {
+            "id": "001",
+            "fecha": "12/04/2018 09:00:00",
+            "nombre": "ergometria"
+        },
+        {
+            "id": "002",
+            "fecha": "12/04/2018 09:00:00",
+            "nombre": "holter"
+        },
+        {
+            "id": "003",
+            "fecha": "01/04/2018 15:00:00",
+            "nombre": "mapa"
+        },
+        {
+            "id": "004",
+            "fecha": "12/06/2018 13:00:00",
+            "nombre": "holter"
+        },
+        {
+            "id": "005",
+            "fecha": "13/06/2018 15:00:00",
+            "nombre": "rehabilitación"
+        },
+        {
+            "id": "006",
+            "fecha": "12/01/2018 11:00:00",
+            "nombre": "medicina general"
+        }
+    ]
+}
