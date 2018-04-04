@@ -6,30 +6,28 @@ import { connect } from 'react-redux';
 import { loadCitas } from './actionCreators.js';
 import './App.css';
 
-class App extends Component {
+const App = (props) => {
 
-  render() {
-    return (
-      <div className="app-container container-fluid">
-        <PageHeader className="text-center header-title">
-          Set your appointment!
-          <p className="text-center text-muted">Click on the available appointments to assign a Patient</p>
-        </PageHeader>
-        <div className="appointments-container">
-          <Grid>
-            <Row className="show-grid">
-              {this.props.citas.map((cita) =>
-                <Col xs={12} sm={3} key={ cita.id }>
-                  <Appointment name={ cita.nombre } date={ cita.fecha } patientId={ cita.patientId } current={ cita.id }/>
-                </Col>
-              )}
-            </Row>
-            <AppointmentForm />
-          </Grid>
-        </div>
+  return (
+    <div className="app-container container-fluid">
+      <PageHeader className="text-center header-title">
+        Set your appointment!
+        <p className="text-center text-muted">Click on the available appointments to assign a Patient</p>
+      </PageHeader>
+      <div className="appointments-container">
+        <Grid>
+          <Row className="show-grid">
+            {props.citas.map((cita) =>
+              <Col xs={12} sm={3} key={ cita.id }>
+                <Appointment name={ cita.nombre } date={ cita.fecha } patientId={ cita.patientId } current={ cita.id }/>
+              </Col>
+            )}
+          </Row>
+          <AppointmentForm />
+        </Grid>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 const mapStateToProps = state => {
