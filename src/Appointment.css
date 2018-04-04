@@ -1,0 +1,9 @@
+.appointment-container {
+  cursor: pointer;
+  height: 18rem;
+  margin-bottom: 1.5rem
+}
+
+.appointment-container p {
+  font-size: 2.5rem;
+}
